@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 
   def index
-    @title = "The best Site you've ever been to!!"
+    @title = "Time to Get up and Get out"
   end
 end
