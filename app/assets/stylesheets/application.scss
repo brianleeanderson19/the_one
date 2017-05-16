@@ -14,16 +14,14 @@ body {
   thead {
     color: white;
     font-size: 30px;
-  }
-
-  tbody {
-    color: red;
+    vertical-align: center;
   }
 
   td {
     color: white;
     padding-left: 5px;
     padding-top: 5px;
+    vertical-align: middle;
   } 
 }
 
@@ -41,4 +39,39 @@ body {
       margin-top: -130px;
     }
 }
+
+.card {
+  text-align: center;
+  color: #fff;
+}
+
+.card-block {
+  text-align: center;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.field {
+  display: inline-block;
+  margin-top: 10px;
+  text-align: right;
+}
+
+textarea {
+  color: black;
+}
+
+input {
+  color: black;
+}
+
+label {
+  font-size: 20px;
+  margin-right: 5px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
 

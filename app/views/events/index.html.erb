@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<div align="center">
+<div align="center" class="eventsandstuff">
 <h1>Events</h1>
 
 
@@ -14,13 +14,14 @@
     </thead>
 
     <tbody>
+
       <% @events.each do |event| %>
         <tr>
           <td><%= event.title %></td>
           <td><%= event.description %></td>
           <td><%= link_to 'Show', event, class: 'btn btn-xs btn-primary' %></td>
           <td><%= link_to 'Edit', edit_event_path(event), class: 'btn btn-xs btn-primary' %></td>
-          <td cla><%= link_to 'Destroy', event, method: :delete, class: 'btn btn-xs btn-danger', data: { confirm: 'Are you sure?' } %></td>
+          <td cla><%= link_to 'Delete Event', event, method: :delete, class: 'btn btn-xs btn-danger', data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
     </tbody>
@@ -31,3 +32,7 @@
 
 <%= link_to 'New Event', new_event_path, class: 'btn btn-lg btn-primary' %>
 </div>
+
+<!-- <div class="longboard">
+  <img src="/images/longboard_hipster.jpg" height="50" width="50">
+</div> -->
